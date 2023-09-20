@@ -1,0 +1,181 @@
+input::placeholder, input, textarea::placeholder, textarea, option, select{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+
+input{
+    height: 40px;
+    background-color: var(--white);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--black-50);
+    transition: border-color 0.3s;
+    padding: 0 8px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.textarea{
+    padding: 12px 8px;
+    border: 1px solid var(--black-50);
+    border-radius: 12px;
+    resize: none;
+    background-color: var(--white);
+}
+
+.select-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+  
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--black-50);
+    transition: border-color 0.3s;
+    padding: 0 8px;
+}
+
+select{
+    height: 48px;
+    background-color: var(--white);
+}
+
+.custom-select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 4px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.toggle-password-icon{
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    border-radius: 24px;
+}
+
+.toggle-password-icon:hover{
+    background-color: var(--primary-20);
+    cursor: pointer;
+}
+
+.form-element{
+    margin-bottom: 16px;
+}
+
+.actions-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions-form.etapa1 {
+    display: flex;
+    justify-content: flex-end; /* Alinhar à direita */
+    align-items: flex-end;
+}
+
+div.actions-form button.button{
+    width: calc(50% - 12px);
+    margin: 0;
+}
+
+/*Label & Legend Configurations*/  
+label.legend {
+    color: var(--black-100);
+    position: absolute;
+    top: -10px;
+    background-color:var(--white);
+    margin-left: 16px;
+    padding: 4px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center; /* Alinhe verticalmente ao centro */
+}
+
+.breadcrumb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center; /* Alinhe verticalmente ao centro */
+}
+
+.breadcrumb li {
+    font-size: 14px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center; /* Alinhe verticalmente ao centro */
+}
+
+.breadcrumb li a {
+    display: block;
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--black-90);
+}
+
+.breadcrumb li.default {
+    background-color: var(--black-05);
+}
+
+.breadcrumb li.done {
+    background-color: var(--terciary-70);
+}
+
+.breadcrumb li.next a {
+    color: var(--primary-100);
+}
+
+.breadcrumb li.next:hover, .breadcrumb li.done:hover a {
+    background-color: var(--primary-80);
+}
+
+.breadcrumb li.next a:hover, .breadcrumb li.done:hover a{
+    color: var(--white);
+}
+
+/* Tornar links em 'default' não clicáveis */
+.breadcrumb li.default a {
+    pointer-events: none;
+}

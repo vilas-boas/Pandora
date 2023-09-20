@@ -1,0 +1,137 @@
+.card-problema{
+    border: 2px solid var(--black-20);
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 2px 0px rgba(51, 51, 51, 0.16);
+    margin-bottom: 16px;
+}
+
+.card-problema ul{
+    display: flex;
+    gap: 8px;
+}
+
+.card-problema li{
+    list-style: none;
+    color: var(--black-70);
+    border-radius: 12px;
+}
+
+.card-problema h5, .card-problema ul{
+    padding-bottom: 16px;
+}
+
+.card-problema span.text-small-semibold{
+    margin-bottom: 8px;
+}
+
+.card-problema div.text-small-semibold{
+    color: var(--black-70);
+}
+
+
+/*Tab*/
+.tab-container {
+    display: flex;
+    margin: 16px 0px;
+    gap: 16px;
+}
+
+.tab-button {
+    background-color: var(--white);
+    color: var(--black-100);
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid var(--black-20);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Estilo para a aba selecionada */
+.active-tab {
+    background-color: var(--primary-100);
+    color: var(--white);
+    border: 1px solid var(--primary-100);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+span.text-small{
+    display: block;
+    margin-bottom: 16px;
+}
+
+/*Input e Select*/
+
+div.selects{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.select-busca-problema{
+    border: 1px solid var(--black-20);
+    border-radius: 12px;
+    padding: 8px;
+    height: 32px;
+    font-weight: 600;
+    color: var(--black-90);
+    margin-bottom: 16px;
+}
+
+div.card-problema div.text-small-semibold{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/*Tab List*/
+.tab-list-container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .tab-list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .tab-item {
+    color: var(--black-90);
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button.tab-item:hover{
+    color: var(--primary-100);
+  }
+
+  button.tab-item{
+    background-color: var(--white);
+  }
+
+  button.tab-item.active{
+    font-weight: 600;
+    border-radius: 0;
+    border-bottom: 4px solid var(--primary-70);
+  }
+  
+  .tab-item.active {
+    color: var(--primary-70);
+  }
+  

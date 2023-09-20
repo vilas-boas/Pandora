@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/forms.css">
+
+    <title>Pandora - Problemas</title>
+</head>
+
+<body>
+<div class="container" id="topo">
+        <header>
+            
+            <h4 style="margin-top: 16px;">
+                Problemas
+            </h4>
+
+        </header>
+    
+        <main class="container">
+
+            <div>
+                <div class="tab-container">
+                    <button class="tab-button" data-tab="comunidade" onclick="openTab('comunidade')">
+                        <span class="icon-small">
+                            public
+                        </span>
+                        <span class="text-small-semibold">
+                            Da Comunidade
+                        </span>
+                    </button>
+            
+                    <button class="tab-button" data-tab="cadastrados" onclick="openTab('cadastrados')">
+
+                        <span class="icon-small">
+                            person
+                        </span>
+
+                        <span class="text-small-semibold">
+                            Seus Cadastrados
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="comunidade" class="tab-content">
+                <p>
+                    Descubra problemas cadastrados por outros usuários e ajude a resolve-los.
+                </p>
+
+                <hr>
+
+                <div class= "input-container form-element">
+                    
+                    <label class="legend">Problema</label>
+                          
+                    <div class= "input-wrapper">
+
+                        <span class="icon-big" style="color: var(--black-50);">search</span>
+                          
+                        <input
+                            type="search"
+                            id="searchInput"
+                            name=""
+                            placeholder="Ponte de Palitos"
+                        />
+        
+                    </div>
+                          
+                </div>
+
+                    <div class="selects">
+
+                        <select class="select-busca-problema">
+                            <option class="text" value="" disabled selected hidden>
+                                Áreas e Subárea
+                            </option>          
+                        </select>
+
+                        <select class="select-busca-problema">
+                            <option class="text" value="" disabled selected hidden>
+                                Ano
+                            </option>
+
+                            <option>
+                                2022
+                            </option>
+
+                            <option>
+                                2023
+                            </option>  
+                        </select>
+                            
+                    </div>
+
+                    <div>
+
+                        <span class="text-small">36 Problemas</span>
+
+                        <a href="">
+                            <div class="card-problema">
+                                <h5>
+                                    Ponte de Palitos
+                                </h5>
+                                
+                                <span class="text-small-semibold">Educação:</span>
+            
+                                <ul>
+                                    <li class="text-small">Matemática</li>
+                                    <li class="text-small">•</li>
+                                    <li class="text-small">Física</li>
+                                </ul>
+            
+                                <div class="text-small-semibold">Equipes: 112</div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="card-problema">
+                                <h5>
+                                    Ponte de Palitos
+                                </h5>
+                                
+                                <span class="text-small-semibold">Educação:</span>
+            
+                                <ul>
+                                    <li class="text-small">Matemática</li>
+                                    <li class="text-small">•</li>
+                                    <li class="text-small">Física</li>
+                                </ul>
+            
+                                <div class="text-small-semibold">Equipes: 112</div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="card-problema">
+                                <h5>
+                                    Ponte de Palitos
+                                </h5>
+                                
+                                <span class="text-small-semibold">Educação:</span>
+            
+                                <ul>
+                                    <li class="text-small">Matemática</li>
+                                    <li class="text-small">•</li>
+                                    <li class="text-small">Física</li>
+                                </ul>
+            
+                                <div class="text-small-semibold">Equipes: 112</div>
+                            </div>
+                        </a>
+
+                        <a href="">
+                            <div class="card-problema">
+                                <h5>
+                                    Ponte de Palitos
+                                </h5>
+                                
+                                <span class="text-small-semibold">Educação:</span>
+            
+                                <ul>
+                                    <li class="text-small">Matemática</li>
+                                    <li class="text-small">•</li>
+                                    <li class="text-small">Física</li>
+                                </ul>
+            
+                                <div class="text-small-semibold">Equipes: 112</div>
+                            </div>
+                        </a>
+
+                        <button class="button tertiary">
+                            Mais Resultados
+                            <span class="icon-big">expand_more</span>
+                        </button>
+        
+                    </div>
+                </div>
+            
+            <div id="cadastrados" class="tab-content">
+                
+                <p>
+                    Cadastre seu problema e conte com ajuda de outras pessoas para resolver.
+                </p>
+
+                <button class="button primary">
+                    <img src="./icons/add.svg" alt="">
+                    Novo Problema
+                </button>
+
+                <hr>
+
+                <div class="tab-list-container">
+                    <div class="tab-list">
+                      <button class="tab-item active">Ativos (2)</button>
+                      <button class="tab-item">Concluídos (5)</button>
+                      <button class="tab-item">Paralisados (10)</button>
+                    </div>
+                </div>
+
+                <div class= "input-container form-element">
+                    
+                    <label class="legend">Problema</label>
+                  
+                    <div class= "input-wrapper">
+
+                        <span class="icon-big" style="color: var(--black-50);">search</span>
+                  
+                        <input
+                            type="search"
+                            id="searchInput"
+                            name=""
+                            placeholder="Ponte de Palitos"
+                        />
+
+                    </div>
+                  
+            </div>
+
+            <div class="selects">
+
+                <select class="select-busca-problema">
+                    <option class="text" value="" disabled selected hidden>
+                        Áreas e Subárea
+                    </option>          
+                </select>
+
+                <select class="select-busca-problema">
+                    <option class="text" value="" disabled selected hidden>
+                        Ano
+                    </option> 
+
+                    <option>
+                        2022
+                    </option>
+
+                    <option>
+                        2023
+                    </option>  
+                </select>
+
+                <select class="select-busca-problema">
+                    <option class="text" value="" disabled selected hidden>
+                        Privacidade
+                    </option>
+
+                    <option>
+                        Público
+                    </option>
+
+                    <option>
+                        Privado
+                    </option>  
+                </select>
+                    
+            </div>
+                  
+
+                <div>
+
+                    <span class="text-small">36 Problemas</span>
+    
+                    <a href="problemadetalhes.html">
+                        <div class="card-problema">
+                            <h5>
+                                Ponte de Palitos
+                            </h5>
+                            
+                            <span class="text-small-semibold">Educação:</span>
+        
+                            <ul>
+                                <li class="text-small">Matemática</li>
+                                <li class="text-small">•</li>
+                                <li class="text-small">Física</li>
+                            </ul>
+        
+                            <div class="text-small-semibold">
+                                Equipes: 112
+    
+                                <span class="chip">
+                                    <span class="icon-small">
+                                        lock
+                                    </span>
+                                    <span>
+                                        Privado
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="problemadetalhes.html">
+                        <div class="card-problema">
+                            <h5>
+                                Ponte de Palitos
+                            </h5>
+                            
+                            <span class="text-small-semibold">Educação:</span>
+        
+                            <ul>
+                                <li class="text-small">Matemática</li>
+                                <li class="text-small">•</li>
+                                <li class="text-small">Física</li>
+                            </ul>
+        
+                            <div class="text-small-semibold">
+                                Equipes: 112
+    
+                                <span class="chip">
+                                    <span class="icon-small">
+                                        public
+                                    </span>
+                                    <span>
+                                        Público
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            
+            </div>
+
+            <div class="navbar-container">
+                <div class="navbar">
+                    <a href="#" class="nav-item active legend-small">
+                        <span class="icon-big">
+                            home
+                        </span>
+                        Problemas
+                    </a>
+    
+                    <a href="#" class="nav-item default legend-small">
+                        <span class="icon-big">
+                            work
+                        </span>
+                        Trabalhos
+                    </a>
+    
+                    <a href="#" class="nav-item default legend-small">
+                        <span class="icon-big">
+                            notifications
+                        </span>
+                        Notificações
+                    </a>
+    
+                    <a href="#" class="nav-item default legend-small">
+                        <span class="icon-big">
+                            person
+                        </span>
+                        Perfil
+                    </a>
+                </div>
+            </div>
+            
+           
+        </main>
+    </div>
+    
+    <footer class="footer">
+
+        <div>
+            <img src="./img/logo-white.svg" alt="logo">
+        </div>
+
+        <div class="conjunto-link-footer">
+            <ul>
+                <li>
+                    <a class="link-footer" href="">
+                        Termos de Uso
+                    </a>
+                </li>
+        
+                <li>
+                    <a class="link-footer" href="">
+                        Política de Privacidade
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#topo" class="topo">
+            Voltar ao Topo <img src="./icons/arrow_upward.svg" alt="">
+        </a>
+        
+        <span>
+            &copy; 2023 Pandora.
+        </span>
+
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabContent, tabButtons;
+            tabContent = document.getElementsByClassName("tab-content");
+            tabButtons = document.getElementsByClassName("tab-button");
+            
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active-tab");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            document.querySelector(`button[data-tab="${tabName}"]`).classList.add("active-tab");
+        }
+
+        // Abra a aba "Da Comunidade" por padrão
+        openTab("comunidade");
+    </script>
+
+</body>
+
+</html>

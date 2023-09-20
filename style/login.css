@@ -1,0 +1,57 @@
+header h4{
+    text-align: center;
+}
+
+header div.logo{
+    text-align: center;
+    margin-top: 24px;
+}
+
+header div.logo img{
+    width: 90%;
+    max-width: 200px;
+    min-width: 100px;
+    margin: 0px auto;
+}
+
+/*Link Configurations*/
+a.form-element {
+    color: var(--primary-100);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: 8px 0;
+    width: max-content;
+    float: right; 
+}
+
+a.form-element:hover{
+    font-weight: 600;
+}
+
+
+@media (max-width:600px) {
+    form button.button.primary{
+        width: 100%;
+        max-width: 328px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-container{
+        max-width: 328px;
+        width: 100%;
+    }
+    
+    .login-img{
+        margin-top: 16px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    .login-img img{
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+}

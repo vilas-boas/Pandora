@@ -1,0 +1,8 @@
+/* Estilos do Formulário */
+.etapa{
+    display: none;
+}
+
+#etapa1 {
+    display: block;
+}

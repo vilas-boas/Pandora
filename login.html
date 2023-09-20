@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" >
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/forms.css">
+
+    <script>
+        function focusInput() {
+            const emailInput = document.getElementById(inputId);
+            if (emailInput) {
+                emailInput.focus();
+            }
+        }
+
+        function togglePasswordVisibility(inputId, iconElement) {
+            const passwordInput = document.getElementById(inputId);
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                iconElement.src = './icons/visibility_off.svg';
+            } else {
+                passwordInput.type = 'password';
+                iconElement.src = './icons/visibility.svg';
+            }
+        }
+    </script>
+
+    <title>Pandora - Login</title>
+</head>
+
+<body>
+    <div class="container" id="topo">
+        <header>
+            <div class="logo">
+                <img alt="logo pandora" src="./img/logo.svg">
+            </div>
+
+            <div class="login-img">
+                <img src="./img/ola.png" alt="Olá!">
+            </div>
+
+            <h4>
+                Login
+            </h4>
+
+            <p>
+                Sentimos sua falta! Faça login para acessar sua conta.
+            </p>
+        </header>
+    
+        <main>
+            <form class="login-form">
+                <div class= "input-container form-element" onclick="focusInput('emailInput')">
+                    
+                    <label class="legend">E-mail</label>
+                  
+                    <div class= "input-wrapper">
+                          
+                        <img src="./icons/mail.svg" alt="" class="icon">
+                  
+                        <input
+                            type="email"
+                            id="emailInput"
+                            name=""
+                            placeholder="ada-lovelace@email.com"
+                        />
+
+                    </div>
+                  
+                </div>
+
+                <div class="input-container form-element" onclick="focusInput('passwordInput')">
+                    <label class="legend">Senha</label>
+                  
+                    <div class="input-wrapper">
+                        <img src="./icons/lock.svg" alt="" class="icon">
+                        <input
+                            type="password"
+                            id="passwordInput"
+                            name=""
+                            placeholder="********"
+                        />
+                        <img src="./icons/visibility.svg" class="toggle-password-icon" onclick="togglePasswordVisibility('passwordInput', this)"/>
+                    </div>
+                </div>
+                
+                <a class="form-element" href="recuperarsenha.html">
+                    Esqueci minha senha.
+                </a>
+
+                <button class="button primary">
+                    Entrar
+                </button>
+            </form>
+            
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <div>
+            <img src="./img/logo-white.svg" alt="logo">
+        </div>
+
+        <div class="conjunto-link-footer">
+            <ul>
+                <li>
+                    <a class="link-footer" href="">
+                        Termos de Uso
+                    </a>
+                </li>
+        
+                <li>
+                    <a class="link-footer" href="">
+                        Política de Privacidade
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#topo" class="topo">
+            Voltar ao Topo <img src="./icons/arrow_upward.svg" alt="">
+        </a>
+        
+        <span>
+            &copy; 2023 Pandora.
+        </span>
+
+    </footer>
+</body>
+
+</html>
